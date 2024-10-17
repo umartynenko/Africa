@@ -1,5 +1,5 @@
 //
-//  CoverImageView.swift
+//  CoverImageViewModel.swift
 //  Africa
 //
 //  Created by Uriy Martynenko on 17.10.2024.
@@ -8,7 +8,7 @@
 import SwiftUI
 
 
-struct CoverImageView: View {
+struct CoverImageViewModel: View {
     // MARK: - PROPERTIES
     let coverImages: [CoverImageModel] = Bundle.main.decode("covers.json")
     
@@ -27,5 +27,5 @@ struct CoverImageView: View {
 
 // MARK: - PREVIEW
 #Preview {
-    CoverImageView()
+    CoverImageViewModel()
 }
