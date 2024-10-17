@@ -8,26 +8,32 @@
 import SwiftUI
 
 struct MainView: View {
+    // MARK: - BODY
     var body: some View {
+        // MARK: - TABVIEW
         TabView {
+            // MARK: - CONTENTVIEW
             ContentView()
                 .tabItem {
                     Image(systemName: "square.grid.2x2")
                     Text("Browse")
                 }
             
+            // MARK: - VIDEOLISTVIEW
             VideoListView()
                 .tabItem {
                     Image(systemName: "play.rectangle")
                     Text("Watch")
                 }
             
+            // MARK: - MAPVIEW
             MapView()
                 .tabItem {
                     Image(systemName: "map")
                     Text("Locations")
                 }
             
+            // MARK: - GALLERYVIEW
             GalleryView()
                 .tabItem {
                     Image(systemName: "photo")
@@ -37,6 +43,7 @@ struct MainView: View {
     }
 }
 
+// MARK: - PREVIEW
 #Preview {
     MainView()
 }
