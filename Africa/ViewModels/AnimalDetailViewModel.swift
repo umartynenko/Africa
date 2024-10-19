@@ -47,6 +47,39 @@ struct AnimalDetailViewModel: View {
                 }
                 .padding(.horizontal)
                 
+                // Facts
+                Group {
+                    HeadingViewModel(headingImage: "questionmark.circle", headingText: "Did you know?")
+                    
+                    InsetFactViewModel(animal: animal)
+                }
+                .padding(.horizontal)
+                
+                // Description
+                Group {
+                    HeadingViewModel(headingImage: "info.circle", headingText: "All about \(animal.name)")
+                    
+                    Text(animal.description)
+                        .multilineTextAlignment(.leading)
+                        .layoutPriority(1)
+                }
+                .padding(.horizontal)
+                
+                // Map
+                Group {
+                    HeadingViewModel(headingImage: "map", headingText: "National Parks")
+                    
+                    InsetMapViewModels()
+                }
+                .padding(.horizontal)
+                
+                // Link
+                Group {
+                    HeadingViewModel(headingImage: "books.vertical", headingText: "Learn More")
+                    
+                    ExternalWeblinkViewModel(animal: animal)
+                }
+                .padding(.horizontal)
             } //: VStack
             .navigationTitle("Learn about \(animal.name)")
             .navigationBarTitleDisplayMode(.inline)
