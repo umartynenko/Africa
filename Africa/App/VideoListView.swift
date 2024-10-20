@@ -18,8 +18,10 @@ struct VideoListView: View {
         NavigationStack {
             List {
                 ForEach(videos) { item in
-                    VideoListItemViewModel(video: item)
-                        .padding(.vertical, 8)
+                    NavigationLink(destination: VideoPlayerViewModel(videoSelected: item.id, videoTitle: item.name )) {
+                        VideoListItemViewModel(video: item)
+                            .padding(.vertical, 8)
+                    }
                 } //: ForEach
 //                .listRowBackground(Color.black)
             } //: List
