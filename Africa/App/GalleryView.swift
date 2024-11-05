@@ -9,7 +9,39 @@ import SwiftUI
 
 struct GalleryView: View {
     var body: some View {
-        Text("GalleryView")
+        ScrollView(.vertical, showsIndicators: false) {
+            Text("Gallery")
+            Text("Gallery")
+            Text("Gallery")
+            Text("Gallery")
+            Text("Gallery")
+            Text("Gallery")
+            Text("Gallery")
+            Text("Gallery")
+            Text("Gallery")
+            Text("Gallery")
+            Text("Gallery")
+            Text("Gallery")
+            Text("Gallery")
+            Text("Gallery")
+            Text("Gallery")
+            Text("Gallery")
+            Text("Gallery")
+            Text("Gallery")
+            Text("Gallery")
+            Text("Gallery")
+            Text("Gallery")
+            Text("Gallery")
+            Text("Gallery")
+            Text("Gallery")
+            Text("Gallery")
+            Text("Gallery")
+            Text("Gallery")
+            Text("Gallery")
+            Text("Gallery")
+        } //: ScrollView
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(MotionAnimationViewModel())
     }
 }
 
