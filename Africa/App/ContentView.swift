@@ -52,6 +52,8 @@ struct ContentView: View {
                             } //: NavigationLink
                             .listRowBackground(Color.black)
                         } //: ForEach
+                        CreditsView()
+                            .modifier(CenterModifier())
                     } //: List
                 } else {
                     ScrollView(.vertical, showsIndicators: false) {
